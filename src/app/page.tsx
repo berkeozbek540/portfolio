@@ -1,9 +1,11 @@
-import { ModeToggle } from "@/components/layout/ModeToggle";
+import { Card } from "@/components/ui/card";
+
+import { Navbar } from "@/components/layout/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <ModeToggle />
+      <span>About</span>
     </div>
   );
 }

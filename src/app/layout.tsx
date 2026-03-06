@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ProfileCard from "@/components/layout/ProfileCard";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { Card } from "@/components/ui/card";
+import { Navbar } from "@/components/layout/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,10 +34,12 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange>
-          {children}
-          <div className="flex flex-col md:flex-row gap-4 p-6 max-w-[1100px] mx-auto">
+          <div className="flex flex-col md:flex-row gap-4 p-6 md:max-w-[1400px] mx-auto">
             <ProfileCard />
-            <main className="">{children}</main>
+            <Card className="md:w-[1100px] md:mx-auto">
+              <Navbar />
+              <main className="">{children}</main>
+            </Card>
           </div>
         </ThemeProvider>
       </body>
