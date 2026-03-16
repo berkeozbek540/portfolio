@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "../ui/ModeToggle";
 import { HamburgerMenu } from "../ui/HamburgerMenu";
-import path from "path";
 
 const links = [
   { label: "About", href: "/" },
