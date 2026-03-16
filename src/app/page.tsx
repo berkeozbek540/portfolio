@@ -4,26 +4,28 @@ import { Code2, Megaphone, Paintbrush, Search } from "lucide-react";
 const whatImDoing = [
   {
     label: "Web Design",
-    description: "Creating visually appealing and user-friendly websites.",
+    description: "Modern, clean and visually striking designs tailored to your brand identity.",
     icon: <Paintbrush className="w-10 h-10 text-amber-400 shrink-0" />,
   },
   {
     label: "Web Development",
-    description: "Building responsive and user-friendly websites and applications.",
+    description:
+      "Fast, scalable and responsive web applications built with cutting-edge technologies.",
     icon: <Code2 className="w-10 h-10 text-amber-400 shrink-0" />,
   },
   {
     label: "SEO",
-    description: "Optimizing websites for better search engine visibility.",
+    description:
+      "Data-driven SEO strategies to boost your visibility and rank higher on search engines.",
     icon: <Search className="w-10 h-10 text-amber-400 shrink-0" />,
   },
   {
     label: "Advertising",
-    description: "Creating visually appealing and user-friendly websites.",
+    description:
+      "Targeted ad campaigns that reach the right audience and turn clicks into customers.",
     icon: <Megaphone className="w-10 h-10 text-amber-400 shrink-0" />,
   },
 ];
-
 export default function Home() {
   return (
     <div className="py-4 px-8">
@@ -44,7 +46,7 @@ export default function Home() {
         <div>
           <h1 className="text-2xl font-bold text-white">What I'm Doing</h1>
         </div>
-        <div className="grid grid-cols-2 gap-4 py-4">
+        <div className="grid md:grid-cols-2 gap-4 py-4">
           {whatImDoing.map(({ label, description, icon }) => (
             <Card
               key={label}
