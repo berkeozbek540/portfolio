@@ -13,7 +13,7 @@ import { Github, Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 const ProfileCard = () => {
   return (
-    <Card className="max-w-sm">
+    <Card className="max-w-sm h-fit">
       <CardHeader className="flex flex-col items-center space-y-4">
         <Avatar className="w-40 h-40">
           <AvatarImage src="https://github.com/shadcn.png" />

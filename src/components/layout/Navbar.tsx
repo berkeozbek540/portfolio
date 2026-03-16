@@ -31,7 +31,7 @@ export function Navbar() {
             {label}
           </Link>
         ))}
-        <ModeToggle />
+        {/* <ModeToggle /> */}
       </div>
       <div className="flex items-center justify-between md:hidden">
         <div>
