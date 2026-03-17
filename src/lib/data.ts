@@ -1,14 +1,27 @@
 export type IconName = "paintbrush" | "code2" | "search" | "megaphone";
-
 export interface WhatImDoing {
   label: string;
   description: string;
   iconName: IconName;
 }
-
 export interface TechStack {
   label: string;
   iconName: string;
+}
+export interface Education {
+  school: string;
+  degree: string;
+  date: string;
+}
+export interface Experience {
+  company: string;
+  role: string;
+  date: string;
+  description: string;
+}
+export interface Skill {
+  label: string;
+  category: string;
 }
 
 export const whatImDoing: WhatImDoing[] = [
@@ -36,7 +49,6 @@ export const whatImDoing: WhatImDoing[] = [
     iconName: "megaphone",
   },
 ];
-
 export const techStack: TechStack[] = [
   {
     label: "React.js",
@@ -69,5 +81,66 @@ export const techStack: TechStack[] = [
   {
     label: "Github",
     iconName: "/icons/github.svg",
+  },
+];
+export const education: Education[] = [
+  {
+    school: "Pamukkale University, Denizli",
+    degree: "Computer Science",
+    date: "2020 - 2022",
+  },
+];
+export const experience: Experience[] = [
+  {
+    company: "Webkent Yazılım",
+    role: "Intern",
+    date: "02/2022 - 06/2022",
+    description:
+      "Learned the fundamentals of web development processes through hands-on experience with real-world projects. Contributed to live projects by implementing small-scale UI adjustments and bug fixes.",
+  },
+  {
+    company: "Webent Yazılım",
+    role: "Fullstack Developer",
+    date: "07/2022 - 08/2023",
+    description:
+      "Designed responsive and fast-loading user interfaces using Bootstrap and modern UI principles. Integrated REST APIs to ensure seamless execution of payment (Virtual POS) and shipment tracking processes for users. Performed debugging, performance optimization, and code refactoring on existing projects to enhance overall system stability.",
+  },
+];
+export const skills: Skill[] = [
+  {
+    label: "React.js",
+    category: "Frontend",
+  },
+  {
+    label: "Next.js",
+    category: "Frontend",
+  },
+  {
+    label: "TypeScript",
+    category: "Frontend",
+  },
+  {
+    label: "JavaScript",
+    category: "Frontend",
+  },
+  {
+    label: "Tailwind CSS",
+    category: "Frontend",
+  },
+  {
+    label: "Shadcn/ui",
+    category: "Frontend",
+  },
+  {
+    label: "Git",
+    category: "Tools & Others",
+  },
+  {
+    label: "Github",
+    category: "Tools & Others",
+  },
+  {
+    label: "Node.js",
+    category: "Backend",
   },
 ];
