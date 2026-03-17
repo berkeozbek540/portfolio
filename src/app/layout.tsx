@@ -1,3 +1,4 @@
+import ClientLayout from "@/components/layout/ClientLayout";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -34,7 +35,9 @@ export default function RootLayout({
             <ProfileCard />
             <Card className="md:w-[1100px] md:mx-auto">
               <Navbar />
-              <main className="">{children}</main>
+              <main className="">
+                <ClientLayout>{children}</ClientLayout>
+              </main>
             </Card>
           </div>
         </ThemeProvider>

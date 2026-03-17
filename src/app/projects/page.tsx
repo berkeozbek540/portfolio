@@ -1,7 +1,11 @@
-import React from "react";
+import PageTransition from "@/components/layout/PageTransition";
 
 const page = () => {
-  return <div>projects</div>;
+  return (
+    <PageTransition>
+      <div>projects</div>
+    </PageTransition>
+  );
 };
 
 export default page;
