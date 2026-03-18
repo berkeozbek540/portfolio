@@ -132,6 +132,10 @@ export const skills: Skill[] = [
     category: "Frontend",
   },
   {
+    label: "Framer Motion",
+    category: "Frontend",
+  },
+  {
     label: "Git",
     category: "Tools & Others",
   },
