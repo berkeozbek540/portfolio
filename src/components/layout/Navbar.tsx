@@ -33,16 +33,7 @@ export function Navbar() {
         ))}
         {/* <ModeToggle /> */}
       </div>
-      <div className="flex items-center justify-between md:hidden">
-        <div>
-          {pathname === "/" ? (
-            <div className="px-4 py-1.5 rounded-lg text-xl font-large text-amber-400 border-amber-400">
-              About
-            </div>
-          ) : (
-            <span>{pathname}</span>
-          )}
-        </div>
+      <div className="flex items-center justify-end md:hidden">
         <HamburgerMenu />
       </div>
     </nav>

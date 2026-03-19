@@ -1,6 +1,7 @@
 "use client";
 import { Marquee } from "../ui/marquee";
 import { techStack } from "@/lib/data";
+import Image from "next/image";
 
 const TechStack = () => {
   return (
@@ -14,7 +15,7 @@ const TechStack = () => {
               <div
                 key={label}
                 className="flex flex-col items-center justify-center w-20 h-20 p-6 rounded-lg bg-zinc-900 border border-zinc-700">
-                <img src={iconName} alt={label} />
+                <Image src={iconName} alt={label} width={32} height={32} />
                 <p>{label}</p>
               </div>
             ))}
