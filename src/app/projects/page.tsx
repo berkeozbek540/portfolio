@@ -1,9 +1,12 @@
 import PageTransition from "@/components/layout/PageTransition";
+import ProjectCard from "@/components/projects/ProjectCard";
 
 const page = () => {
   return (
     <PageTransition>
-      <div>projects</div>
+      <div className="py-4 px-8">
+        <ProjectCard />
+      </div>
     </PageTransition>
   );
 };

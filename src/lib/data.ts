@@ -23,6 +23,12 @@ export interface Skill {
   label: string;
   category: string;
 }
+export interface Project {
+  name: string;
+  description: string;
+  imageUrl: string;
+  projectUrl: string;
+}
 
 export const whatImDoing: WhatImDoing[] = [
   {
@@ -146,5 +152,35 @@ export const skills: Skill[] = [
   {
     label: "Node.js",
     category: "Backend",
+  },
+];
+export const projects: Project[] = [
+  {
+    name: "E-Commerce Website",
+    description:
+      "A fully responsive e-commerce website built with Next.js and Tailwind CSS, featuring a modern design and seamless user experience.",
+    imageUrl: "/projects/placeholder.jpg",
+    projectUrl: "https://example.com/ecommerce",
+  },
+  {
+    name: "Personal Portfolio",
+    description:
+      "A sleek and modern personal portfolio website built with React.js and Framer Motion, showcasing my skills, projects, and experience.",
+    imageUrl: "/projects/placeholder.jpg",
+    projectUrl: "https://example.com/portfolio",
+  },
+  {
+    name: "Demo Project",
+    description:
+      "A sleek and modern personal portfolio website built with React.js and Framer Motion, showcasing my skills, projects, and experience.",
+    imageUrl: "/projects/placeholder.jpg",
+    projectUrl: "https://example.com/portfolio",
+  },
+  {
+    name: "Demo Project 2",
+    description:
+      "A sleek and modern personal portfolio website built with React.js and Framer Motion, showcasing my skills, projects, and experience.",
+    imageUrl: "/projects/placeholder.jpg",
+    projectUrl: "https://example.com/portfolio",
   },
 ];
