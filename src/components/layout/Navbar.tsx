@@ -1,19 +1,29 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 import { ModeToggle } from "../ui/ModeToggle";
 import { HamburgerMenu } from "../ui/HamburgerMenu";
 
-const links = [
-  { label: "About", href: "/" },
-  { label: "Resume", href: "/resume" },
-  { label: "Projects", href: "/projects" },
-  { label: "Contact", href: "/contact" },
-];
-
 export function Navbar() {
+  const t = useTranslations("nav");
   const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+
+  const toggleLocale = () => {
+    const newLocale = locale === "en" ? "tr" : "en";
+    router.push(`/${newLocale}${pathname.replace(`/${locale}`, "")}`);
+  };
+
+  const links = [
+    { href: "/", label: t("about") },
+    { href: "/resume", label: t("resume") },
+    { href: "/projects", label: t("projects") },
+    { href: "/contact", label: t("contact") },
+  ];
 
   return (
     <nav className="sticky z-50 px-4">
@@ -31,6 +41,11 @@ export function Navbar() {
             {label}
           </Link>
         ))}
+        <button
+          onClick={toggleLocale}
+          className="px-3 py-1.5 rounded-lg text-sm font-medium text-amber-400 hover:text-white transition-colors border border-white/10">
+          {locale === "en" ? "TR" : "EN"}
+        </button>
         {/* <ModeToggle /> */}
       </div>
       <div className="flex items-center justify-end md:hidden">
