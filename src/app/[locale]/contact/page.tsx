@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,6 +20,8 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>;
 
 const page = () => {
+  const t = useTranslations("contact");
+
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -51,7 +54,7 @@ const page = () => {
     <PageTransition>
       <div className="py-4 px-8">
         <div>
-          <h1 className="text-2xl font-bold text-white">Contact</h1>
+          <h1 className="text-2xl font-bold text-white">{t("title")}</h1>
           <div className="w-10 h-1.5 my-2 bg-amber-400 rounded-full"></div>
         </div>
         <Form {...form}>
@@ -63,7 +66,7 @@ const page = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Full name" {...field} />
+                      <Input placeholder={t("fullname")} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -75,7 +78,7 @@ const page = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Email address" {...field} />
+                      <Input placeholder={t("email")} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -88,7 +91,7 @@ const page = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Textarea placeholder="Your message" rows={8} className="min-h-32" {...field} />
+                    <Textarea placeholder={t("message")} rows={8} className="min-h-32" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -96,18 +99,14 @@ const page = () => {
             />
             <div className="flex justify-end">
               {isSuccess && (
-                <p className="flex items-center mr-4 text-green-400 text-sm">
-                  Message sent successfully!
-                </p>
+                <p className="flex items-center mr-4 text-green-400 text-sm">{t("success")}</p>
               )}
 
               {isError && (
-                <p className="flex items-center mr-4 text-red-400 text-sm">
-                  Something went wrong. Please try again.
-                </p>
+                <p className="flex items-center mr-4 text-red-400 text-sm">{t("error")}</p>
               )}
               <Button type="submit" disabled={isLoading} className="bg-zinc-800 text-amber-400">
-                {isLoading ? "Sending..." : "Send Message"}
+                {isLoading ? t("sending") : t("send")}
               </Button>
             </div>
           </form>

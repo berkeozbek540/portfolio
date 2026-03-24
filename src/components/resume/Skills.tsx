@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { Skill, skills } from "@/lib/data";
 import { Separator } from "../ui/separator";
 
@@ -24,17 +25,19 @@ const Skills = () => {
   const tools = skills.filter((s) => s.category === "Tools & Others");
   const backend = skills.filter((s) => s.category === "Backend");
 
+  const t = useTranslations("skills");
+
   return (
     <div>
       <div>
-        <h1 className="text-2xl font-bold text-white">Skills</h1>
+        <h1 className="text-2xl font-bold text-white">{t("title")}</h1>
         <div className="w-10 h-1.5 my-2 bg-amber-400 rounded-full"></div>
       </div>
-      <SkillCategory title="Frontend" items={frontend} />
+      <SkillCategory title={t("frontend")} items={frontend} />
       <Separator className="my-4" />
-      <SkillCategory title="Tools & Others" items={tools} />
+      <SkillCategory title={t("tools")} items={tools} />
       <Separator className="my-4" />
-      <SkillCategory title="Backend" items={backend} />
+      <SkillCategory title={t("backend")} items={backend} />
     </div>
   );
 };

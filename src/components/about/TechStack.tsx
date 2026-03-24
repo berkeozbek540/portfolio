@@ -1,14 +1,16 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { Marquee } from "../ui/marquee";
 import { techStack } from "@/lib/data";
 import Image from "next/image";
 
 const TechStack = () => {
+  const t = useTranslations("techStack");
   return (
     <>
       <div className="py-4">
         <div className="text-center">
-          <h1 className="text-2xl font-bold py-1 text-white text-center">Tech Stack</h1>
+          <h1 className="text-2xl font-bold py-1 text-white text-center">{t("title")}</h1>
           <div className="mx-auto w-30 h-1.5 my-2 bg-amber-400 rounded-full overflow-hidden"></div>
           <Marquee pauseOnHover>
             {techStack.map(({ label, iconName }) => (

@@ -1,27 +1,25 @@
 export type IconName = "paintbrush" | "code2" | "search" | "megaphone";
 export interface WhatImDoing {
-  label: string;
-  description: string;
   iconName: IconName;
+  key: string;
 }
 export interface TechStack {
   label: string;
   iconName: string;
 }
 export interface Education {
-  school: string;
-  degree: string;
   date: string;
+  key: string;
 }
 export interface Experience {
   company: string;
-  role: string;
   date: string;
-  description: string;
+  key: string;
 }
 export interface Skill {
   label: string;
   category: string;
+  key: string;
 }
 export interface Project {
   name: string;
@@ -32,27 +30,20 @@ export interface Project {
 
 export const whatImDoing: WhatImDoing[] = [
   {
-    label: "Web Design",
-    description: "Modern, clean and visually striking designs tailored to your brand identity.",
     iconName: "paintbrush",
+    key: "webDesign",
   },
   {
-    label: "Web Development",
-    description:
-      "Fast, scalable and responsive web applications built with cutting-edge technologies.",
     iconName: "code2",
+    key: "webDevelopment",
   },
   {
-    label: "SEO",
-    description:
-      "Data-driven SEO strategies to boost your visibility and rank higher on search engines.",
     iconName: "search",
+    key: "seo",
   },
   {
-    label: "Advertising",
-    description:
-      "Targeted ad campaigns that reach the right audience and turn clicks into customers.",
     iconName: "megaphone",
+    key: "advertising",
   },
 ];
 export const techStack: TechStack[] = [
@@ -91,67 +82,72 @@ export const techStack: TechStack[] = [
 ];
 export const education: Education[] = [
   {
-    school: "Pamukkale University, Denizli",
-    degree: "Computer Science",
     date: "2020 - 2022",
+    key: "computerScience",
   },
 ];
 export const experience: Experience[] = [
   {
     company: "Webkent Yazılım",
-    role: "Intern",
     date: "02/2022 - 06/2022",
-    description:
-      "Learned the fundamentals of web development processes through hands-on experience with real-world projects. Contributed to live projects by implementing small-scale UI adjustments and bug fixes.",
+    key: "intern",
   },
   {
     company: "Webent Yazılım",
-    role: "Fullstack Developer",
     date: "07/2022 - 08/2023",
-    description:
-      "Designed responsive and fast-loading user interfaces using Bootstrap and modern UI principles. Integrated REST APIs to ensure seamless execution of payment (Virtual POS) and shipment tracking processes for users. Performed debugging, performance optimization, and code refactoring on existing projects to enhance overall system stability.",
+    key: "fullstack",
   },
 ];
 export const skills: Skill[] = [
   {
     label: "React.js",
     category: "Frontend",
+    key: "react",
   },
   {
     label: "Next.js",
     category: "Frontend",
+    key: "nextjs",
   },
   {
     label: "TypeScript",
     category: "Frontend",
+    key: "typescript",
   },
   {
     label: "JavaScript",
     category: "Frontend",
+    key: "javascript",
   },
   {
     label: "Tailwind CSS",
     category: "Frontend",
+    key: "tailwind",
   },
   {
     label: "Shadcn/ui",
     category: "Frontend",
+    key: "shadcnui",
   },
   {
     label: "Framer Motion",
     category: "Frontend",
+    key: "framermotion",
   },
   {
     label: "Git",
     category: "Tools & Others",
+    key: "git",
   },
   {
     label: "Github",
     category: "Tools & Others",
+    key: "github",
   },
   {
     label: "Node.js",
     category: "Backend",
+    key: "nodejs",
   },
 ];
 export const projects: Project[] = [

@@ -4,5 +4,75 @@
     "resume": "Resume",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "profile": {
+    "email": "EMAIL",
+    "phone": "PHONE",
+    "location": "ADDRESS"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a frontend developer focused on building user-friendly, clean and maintainable interfaces using React and modern web technologies. I enjoy learning new tools and applying them in real projects. Currently improving my skills in Next.js, TypeScript, and Tailwind CSS. I'm open to freelance projects and full-time frontend positions."
+  },
+  "whatImDoing": {
+    "title": "What I'm Doing",
+    "webDesign": {
+      "label": "Web Design",
+      "description": "Modern, clean and visually striking designs tailored to your brand identity."
+    },
+    "webDevelopment": {
+      "label": "Web Development",
+      "description": "Fast, scalable and responsive web applications built with cutting-edge technologies."
+    },
+    "seo": {
+      "label": "SEO",
+      "description": "Data-driven SEO strategies to boost your visibility and rank higher on search engines."
+    },
+    "advertising": {
+      "label": "Advertising",
+      "description": "Targeted ad campaigns that reach the right audience and turn clicks into customers."
+    }
+  },
+  "techStack": {
+    "title": "Tech Stack"
+  },
+  "openToWork": {
+    "title": "Open To Work",
+    "description": "I am available for freelance projects and full-time positions.",
+    "contact": "Contact"
+  },
+  "experience": {
+    "title": "Experience",
+    "intern": {
+      "role": "Intern",
+      "description": "Learned the fundamentals of web development processes through hands-on experience with real-world projects. Contributed to live projects by implementing small-scale UI adjustments and bug fixes."
+    },
+    "fullstack": {
+      "role": "Fullstack Developer",
+      "description": "Designed responsive and fast-loading user interfaces using Bootstrap and modern UI principles. Integrated REST APIs to ensure seamless execution of payment (Virtual POS) and shipment tracking processes for users. Performed debugging, performance optimization, and code refactoring on existing projects to enhance overall system stability."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "computerScience": {
+      "degree": "Computer Science",
+      "school": "Pamukkale University, Denizli"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "tools": "Tools & Others",
+    "backend": "Backend"
+  },
+  "contact": {
+    "title": "Contact",
+    "fullname": "Full Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "An error occurred while sending the message. Please try again."
   }
 }

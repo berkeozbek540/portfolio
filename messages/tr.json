@@ -4,5 +4,75 @@
     "resume": "Özgeçmiş",
     "projects": "Projeler",
     "contact": "İletişim"
+  },
+  "profile": {
+    "email": "E-POSTA",
+    "phone": "TELEFON",
+    "location": "ADRES"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "description": "React ve modern web teknolojileriyle kullanıcı odaklı, temiz ve sürdürülebilir arayüzler geliştirmeye odaklanan bir frontend geliştiriciyim. Yeni araçlar öğrenmekten ve öğrendiklerimi gerçek projelerde uygulamaktan keyif alıyorum. Next.js, TypeScript ve Tailwind CSS alanlarında kendimi aktif olarak geliştiriyorum. Freelance projeler ve full-time frontend pozisyonlarına açığım."
+  },
+  "whatImDoing": {
+    "title": "Neler Yapıyorum",
+    "webDesign": {
+      "label": "Web Tasarım",
+      "description": "Marka kimliğinize özel modern, temiz ve görsel açıdan çarpıcı tasarımlar."
+    },
+    "webDevelopment": {
+      "label": "Web Geliştirme",
+      "description": "Güncel teknolojilerle oluşturulmuş hızlı, ölçeklenebilir ve duyarlı web uygulamaları."
+    },
+    "seo": {
+      "label": "SEO",
+      "description": "Görünürlüğünüzü artırmak ve arama motorlarında üst sıralara çıkmak için veri odaklı SEO stratejileri."
+    },
+    "advertising": {
+      "label": "Reklam",
+      "description": "Doğru kitleye ulaşan ve tıklamaları müşteriye dönüştüren hedefli reklam kampanyaları."
+    }
+  },
+  "techStack": {
+    "title": "Teknolojiler"
+  },
+  "openToWork": {
+    "title": "Çalışmaya Açığım",
+    "description": "Freelance projeler ve full-time pozisyonlara açığım.",
+    "contact": "İletişim"
+  },
+  "experience": {
+    "title": "İş Deneyimi",
+    "intern": {
+      "role": "Stajyer",
+      "description": "Web geliştirme süreçlerinin temelini gerçek projeler üzerinde deneyimleyerek öğrendim. Küçük ölçekli UI düzenlemeleri ve bug fix'lerle canlı projelere katkı sağladım."
+    },
+    "fullstack": {
+      "role": "Fullstack Developer",
+      "description": "Bootstrap ve modern UI prensiplerini kullanarak responsive, hızlı yüklenen arayüzler tasarladım. REST API'leri entegre ederek ödeme (sanal POS) ve kargo takip süreçlerinin kullanıcıya doğru yansımasını sağladım. Mevcut projelerde hata ayıklama, performans optimizasyonu ve kod refaktörü yaptım."
+    }
+  },
+  "education": {
+    "title": "Eğitim",
+    "computerScience": {
+      "degree": "Bilgisayar Programcılığı",
+      "school": "Pamukkale Üniversitesi, Denizli"
+    }
+  },
+  "skills": {
+    "title": "Yetenekler",
+    "frontend": "Frontend",
+    "tools": "Araçlar & Diğer",
+    "backend": "Backend"
+  },
+  "contact": {
+    "title": "İletişim",
+    "fullname": "Ad Soyad",
+    "email": "E-posta",
+    "message": "Mesaj",
+    "send": "Gönder",
+    "sending": "Gönderiliyor...",
+    "success": "Mesajınız başarıyla gönderildi!",
+    "error": "Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin."
   }
 }

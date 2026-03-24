@@ -1,8 +1,10 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 
 const OpenToWork = () => {
+  const t = useTranslations("openToWork");
   return (
     <>
       <div>
@@ -18,13 +20,11 @@ const OpenToWork = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
               <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500" />
             </span>
-            <span className="text-md text-green-500">Open To Work</span>
+            <span className="text-md text-green-500">{t("title")}</span>
           </Badge>
-          <p className="text-gray-400 py-2">
-            I am available for freelance projects and full-time positions.
-          </p>
+          <p className="text-gray-400 py-2">{t("description")}</p>
           <Button className="text-amber-400" variant="outline">
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">{t("contact")}</Link>
           </Button>
         </div>
       </div>
