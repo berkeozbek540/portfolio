@@ -16,3 +16,5 @@ A modern, high-performance, and responsive portfolio website designed to showcas
 - Components: Shadcn/UI
 - Animations: Framer Motion
 - Deployment: Vercel
+
+Live: https://portfolio-chi-eosin-84.vercel.app/en
